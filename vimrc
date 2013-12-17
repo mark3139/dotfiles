@@ -52,6 +52,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set smartcase   
+set backspace=indent,eol,start  " delete indent
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -65,10 +66,6 @@ autocmd FileType javascript,html,xml set shiftwidth=2
 
 " fold setting
 autocmd FileType python set fdm=indent
-
-
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
-match OverLength /\%81v.\+/
 
 " color setting
 syntax on
