@@ -64,7 +64,7 @@ autocmd FileType python set colorcolumn=80
 autocmd FileType javascript,html,xml set shiftwidth=2
 
 " fold setting
-autocmd FileType python set fdm=marker
+autocmd FileType python set fdm=indent
 
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
