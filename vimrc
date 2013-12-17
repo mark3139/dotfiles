@@ -27,7 +27,7 @@ endif
 map <leader>tt :TagbarToggle<CR>
 
 " ycm setting
-let g:ycm_filetype_blacklist = {'css':1, 'html':1, 'markdown':1, 'javascript': 1, 'xml':1}
+let g:ycm_filetype_blacklist = {'css':1, 'html':1, 'markdown':1, 'javascript': 1, 'xml':1, 'vim':1}
 
 " neocomplache setting
 let g:neocomplcache_enable_at_startup = 1
@@ -57,6 +57,15 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <Space> <C-f>
+
+autocmd FileType python set colorcolumn=80
+
+" tab setting
+autocmd FileType javascript,html,xml set shiftwidth=2
+
+" fold setting
+autocmd FileType python set fdm=marker
+
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
 match OverLength /\%81v.\+/
