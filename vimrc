@@ -31,6 +31,7 @@ let g:ycm_filetype_blacklist = {'css':1, 'html':1, 'markdown':1, 'javascript': 1
 
 " neocomplache setting
 let g:neocomplcache_enable_at_startup = 1
+autocmd FileType python let g:neocomplcache_enable_at_startup = 0
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
