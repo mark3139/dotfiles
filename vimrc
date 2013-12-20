@@ -17,6 +17,8 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nono/jquery.vim'
 Bundle 'thiderman/nginx-vim-syntax'
+Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'Yggdroot/indentLine'
 
 filetype plugin indent on
 
@@ -72,3 +74,6 @@ autocmd FileType python set fdm=indent
 syntax on
 set background=dark
 color molokai
+
+" indent line setting
+let g:indentLine_color_term = 239
